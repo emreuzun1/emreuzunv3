@@ -1,0 +1,123 @@
+#container {
+  overscroll-behavior: none;
+  background-color: black;
+}
+
+.first-section,
+.second-section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: #faf8f0;
+  height: 100%;
+  align-items: center;
+}
+
+.second-section {
+  background-color: black;
+  height: 100vh;
+}
+
+.h1-container {
+  margin-top: 3rem;
+}
+
+.h1 {
+  font-family: "Playball", cursive;
+  font-size: 1.4rem;
+  color: red;
+  opacity: 0;
+}
+
+.hi-container {
+  display: flex;
+}
+
+.hi,
+.im-container > p {
+  font-family: "MonumentExtended", sans-serif;
+  font-size: 5rem;
+  color: black;
+  opacity: 0;
+  margin: 0;
+}
+
+.hi::selection,
+.im-container > p::selection {
+  background-color: #faf8f0;
+}
+
+.mouse {
+  width: 30px;
+  height: 50px;
+  border: 3px solid black;
+  border-radius: 24px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-top: 3rem;
+  opacity: 0;
+}
+
+.scroll {
+  width: 3px;
+  height: 15px;
+  background-color: black;
+  margin-top: 8px;
+  border-radius: 12px;
+}
+
+.contact {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.contact-item {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+  gap: 4px;
+}
+
+.contact-bar {
+  height: 2px;
+  width: 0;
+  background-color: black;
+}
+
+.contact-icon {
+  opacity: 0;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 900px) {
+  .hi,
+  .im-container > p {
+    font-size: 3rem;
+  }
+}
+
+.im-container {
+  display: flex;
+}
+
+.emre {
+  margin-left: 2rem;
+}
+
+.lorem {
+  margin-top: 512px;
+}
+
+.lorem > p {
+  font-size: 4rem;
+  color: white;
+  mix-blend-mode: difference;
+}
