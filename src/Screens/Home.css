@@ -1,6 +1,6 @@
 #container {
   overscroll-behavior: none;
-  background-color: black;
+  background-color: #faf8f0;
 }
 
 .first-section,
@@ -8,25 +8,19 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  background-color: #faf8f0;
-  height: 100%;
+  min-height: 100vh;
   align-items: center;
 }
 
-.second-section {
-  background-color: black;
-  height: 100vh;
+.first-section {
+  justify-content: space-evenly;
 }
 
-.h1-container {
-  margin-top: 3rem;
-}
-
-.h1 {
+.h1,
+.p-title {
   font-family: "Playball", cursive;
   font-size: 1.4rem;
   color: red;
-  opacity: 0;
 }
 
 .hi-container {
@@ -42,6 +36,12 @@
   margin: 0;
 }
 
+.caption-title {
+  font-family: "MonumentExtended", sans-serif;
+  font-size: 2rem;
+  color: black;
+}
+
 .hi::selection,
 .im-container > p::selection {
   background-color: #faf8f0;
@@ -55,7 +55,6 @@
   display: flex;
   justify-content: center;
   position: relative;
-  margin-top: 3rem;
   opacity: 0;
 }
 
@@ -95,6 +94,47 @@
 .contact-icon {
   opacity: 0;
   cursor: pointer;
+  color: black;
+}
+
+.section-caption,
+.h1-container {
+  min-width: 50%;
+  width: 50%;
+}
+
+.p-title {
+  margin-top: 1rem;
+}
+
+.about-text {
+  font-family: "Rubik", sans-serif;
+  font-size: 24px;
+  padding: 1rem 0.5rem;
+}
+
+.about-image-list {
+  display: flex;
+}
+
+.about-image-item {
+  width: 200px;
+  height: 300px;
+  overflow: hidden;
+  padding-top: 12px;
+  padding-left: 12px;
+  padding-right: 12px;
+  background-color: white;
+}
+
+.c-ratio {
+  position: relative;
+  overflow: hidden;
+}
+
+.about-image {
+  width: 100%;
+  height: 250px;
 }
 
 @media only screen and (max-width: 900px) {

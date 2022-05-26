@@ -1,0 +1,23 @@
+.navbar {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  gap: 3rem;
+  padding-bottom: 3rem;
+  padding-left: 2rem;
+}
+
+.section-item {
+  writing-mode: vertical-lr;
+  text-orientation: mixed;
+  font-family: "MonumentExtended", sans-serif;
+  cursor: pointer;
+}
+
+.section-item:hover {
+  scale: 1.1;
+}
