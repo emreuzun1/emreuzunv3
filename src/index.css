@@ -5,8 +5,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap");
 
 :root {
-  black: #060606 !important;
-  red: #e50913 !important;
+  --black: #060606 !important;
+  --red: #e50913 !important;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 html,
@@ -15,8 +19,13 @@ body {
   margin: 0;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 body {
   overscroll-behavior: none;
+  scrollbar-width: none;
 }
 
 @font-face {

@@ -1,0 +1,83 @@
+.e-caption {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding-left: 3rem;
+}
+
+.e-description {
+  padding-right: 1rem;
+  max-width: 50%;
+  font-family: "Rubik", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.e-title {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.e-list-item + .e-list-item {
+  margin-top: 0.5rem;
+}
+
+.e-image-container {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 170px;
+  height: 400px;
+  padding: 12px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.e-image {
+  top: 0;
+  left: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.spike-image {
+  height: 200px;
+}
+
+.first-ul {
+  margin-top: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--red);
+  font-weight: 700;
+}
+
+@media (max-width: 900px) {
+  .e-caption {
+    flex-direction: column;
+    padding-left: 2rem;
+  }
+
+  .e-description {
+    max-width: 100%;
+  }
+
+  .e-title {
+    font-size: 18px;
+  }
+
+  .project-text {
+    font-size: 0.8em;
+  }
+
+  .project-technologies {
+    font-size: 0.8em;
+  }
+}

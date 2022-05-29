@@ -5,12 +5,23 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import { AiFillLinkedin, AiFillInstagram, AiFillGithub } from "react-icons/ai";
 import Navbar from "../components/Navbar";
+import Projects from "../components/Projects";
+import Experiences from "../components/Experiences";
 
 gsap.registerPlugin(ScrollToPlugin);
 gsap.registerPlugin(ScrollTrigger);
 
+const words = ["Front-end Developer", "Mobile Developer", "Gamer"];
+
 export const Home = () => {
   useEffect(() => {
+    let textTl = gsap.timeline({ repeat: -1 });
+    words.forEach((word) => {
+      let tl = gsap.timeline({ repeat: 1, yoyo: true, repeatDelay: 1 });
+      tl.to(".job-title", { text: word });
+      textTl.add(tl);
+    });
+
     let tl = gsap.timeline({
       delay: 0.1,
     });
@@ -54,7 +65,7 @@ export const Home = () => {
       ".scroll",
       { y: 0 },
       {
-        y: 10,
+        y: 5,
         duration: 1,
         ease: "power4.inOut",
         repeat: -1,
@@ -113,20 +124,26 @@ export const Home = () => {
       </div>
       <Navbar />
       <div className="sections"></div>
-      <div className="first-section">
+      <div className="first-section" id="first-section">
         <div className="h1-container">
           <div className="caption">
-            <div className="caption-title">01. Hello World!</div>
+            <div className="caption-title" id="hello-world">
+              01. Hello World!
+            </div>
           </div>
-          <p className="h1 h1-open">{"<h1>"}</p>
+          <div className="h1 h1-open tag">{"<h1>"}</div>
           <div className="hi-container">
             <p className="hi">
-              Hi<span className="hi"> there</span>
-              <p className="hi">My name is </p>
-              <p className="hi">Emre</p>
+              <span className="hi">Hi,</span>
+              <p className="hi">
+                It's <span className="hi">Emre</span>
+              </p>
+              <div className="job-title-container">
+                <p className="hi job-title"></p>
+              </div>
             </p>
           </div>
-          <p className="h1 h1-close">{"</h1>"}</p>
+          <p className="h1 h1-close tag">{"</h1>"}</p>
         </div>
         <div className="mouse">
           <div className="scroll" />
@@ -135,8 +152,10 @@ export const Home = () => {
       <div className="second-section">
         <div className="section-caption">
           <div className="caption second-cap">
-            <div className="caption-title second-title">02. About Me</div>
-            <div className="p-title second-p">{"<p>"}</div>
+            <div className="caption-title second-title" id="about-me">
+              02. About Me
+            </div>
+            <div className="p-title second-p tag">{"<p>"}</div>
             <div className="about-text">
               I was born in İzmir in 1999. I've started to write code when I was
               14. At my 16, I built a trojan virus. I graduated from Yaşar
@@ -144,8 +163,8 @@ export const Home = () => {
               then, I am working at Cevher Digital Solutions as a Software
               Engineer.
             </div>
-            <div className="p-title second-p">{"</p>"}</div>
-            <div className="about-image-list">
+            <div className="p-title second-p tag">{"</p>"}</div>
+            {/* <div className="about-image-list">
               <div className="about-image-item">
                 <img
                   src={require("../assets/images/img1.png")}
@@ -167,10 +186,12 @@ export const Home = () => {
                   className="about-image c-ratio"
                 />
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
+      <Projects />
+      <Experiences />
     </div>
   );
 };

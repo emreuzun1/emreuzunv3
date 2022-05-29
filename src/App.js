@@ -70,24 +70,7 @@ function App() {
     return <Home />;
   }
 
-  return (
-    <>
-      <div className="splash" id="splash">
-        <div className="text-container">
-          <p className="progress_text">You</p>
-          <p className="progress_text">are</p>
-          <p className="progress_text">entering</p>
-          <p className="progress_text">my</p>
-          <p className="progress_text">world</p>
-        </div>
-        <div className="progress">
-          <div className="progress_fill" id="fill"></div>
-        </div>
-        <div className="splash-anim black-bg"></div>
-        <div className="splash-anim white-bg"></div>
-      </div>
-    </>
-  );
+  return <Home />;
 }
 
 export default App;

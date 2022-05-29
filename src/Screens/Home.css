@@ -4,23 +4,40 @@
 }
 
 .first-section,
-.second-section {
+.second-section,
+.third-section,
+.forth-section {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  min-height: 100vh;
   align-items: center;
+  color: var(--black);
 }
 
 .first-section {
   justify-content: space-evenly;
+  min-height: 100vh;
+}
+
+.third-section {
+  margin-top: 12rem;
 }
 
 .h1,
-.p-title {
+.p-title,
+.ul-text,
+.li-text {
   font-family: "Playball", cursive;
   font-size: 1.4rem;
   color: red;
+}
+
+.job-title-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.job-title {
 }
 
 .hi-container {
@@ -30,8 +47,7 @@
 .hi,
 .im-container > p {
   font-family: "MonumentExtended", sans-serif;
-  font-size: 5rem;
-  color: black;
+  font-size: 3.5rem;
   opacity: 0;
   margin: 0;
 }
@@ -39,7 +55,6 @@
 .caption-title {
   font-family: "MonumentExtended", sans-serif;
   font-size: 2rem;
-  color: black;
 }
 
 .hi::selection,
@@ -61,13 +76,14 @@
 .scroll {
   width: 3px;
   height: 15px;
-  background-color: black;
+  background-color: var(--black);
   margin-top: 8px;
   border-radius: 12px;
 }
 
 .contact {
   position: fixed;
+  z-index: 2;
   right: 0;
   bottom: 0;
   width: 100px;
@@ -88,13 +104,13 @@
 .contact-bar {
   height: 2px;
   width: 0;
-  background-color: black;
+  background-color: var(--black);
 }
 
 .contact-icon {
   opacity: 0;
   cursor: pointer;
-  color: black;
+  color: var(--black);
 }
 
 .section-caption,
@@ -137,27 +153,68 @@
   height: 250px;
 }
 
+.li-text {
+  margin-left: 1.5rem;
+}
+
+.image-2 {
+  top: 300px;
+  left: 150px;
+}
+
+.image-3 {
+  top: 500px;
+  left: 300px;
+}
+
+.ul-text,
+.h1 {
+  margin-top: 1.5rem;
+}
+
 @media only screen and (max-width: 900px) {
-  .hi,
-  .im-container > p {
-    font-size: 3rem;
+  .h1-container,
+  .section-caption {
+    min-width: 70%;
+    width: 70%;
   }
-}
 
-.im-container {
-  display: flex;
-}
+  .contact {
+    width: 50px;
+  }
 
-.emre {
-  margin-left: 2rem;
-}
+  .caption-title {
+    font-size: 0.9em;
+  }
 
-.lorem {
-  margin-top: 512px;
-}
+  .hi {
+    font-size: 1.3em;
+  }
 
-.lorem > p {
-  font-size: 4rem;
-  color: white;
-  mix-blend-mode: difference;
+  .contact-bar {
+    display: none;
+  }
+
+  .mouse {
+    width: 20px;
+    height: 40px;
+    border-width: 2px;
+  }
+
+  .scroll {
+    width: 2px;
+    height: 10px;
+  }
+
+  .tag {
+    font-size: 1em;
+  }
+
+  .about-text {
+    font-size: 0.8em;
+  }
+
+  .third-section {
+    margin-top: 6rem;
+  }
 }
