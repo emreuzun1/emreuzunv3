@@ -6,7 +6,7 @@
 
 :root {
   --black: #060606 !important;
-  --red: #e50913 !important;
+  --red: rgb(229, 9, 19) !important;
 }
 
 html {

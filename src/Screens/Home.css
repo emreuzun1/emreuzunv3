@@ -6,7 +6,8 @@
 .first-section,
 .second-section,
 .third-section,
-.forth-section {
+.forth-section,
+.fifth-section {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -15,29 +16,27 @@
 }
 
 .first-section {
-  justify-content: space-evenly;
+  justify-content: center;
   min-height: 100vh;
 }
 
 .third-section {
-  margin-top: 12rem;
+  margin-top: 8rem;
 }
 
 .h1,
 .p-title,
+.button-title,
 .ul-text,
 .li-text {
   font-family: "Playball", cursive;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   color: red;
 }
 
 .job-title-container {
   position: relative;
   overflow: hidden;
-}
-
-.job-title {
 }
 
 .hi-container {
@@ -47,9 +46,19 @@
 .hi,
 .im-container > p {
   font-family: "MonumentExtended", sans-serif;
-  font-size: 3.5rem;
+  font-size: 3rem;
   opacity: 0;
   margin: 0;
+  line-height: 1.5em;
+}
+
+.hi-text {
+  font-size: 1.3rem;
+}
+
+.job-title,
+.job-title-container {
+  font-size: 2.5rem;
 }
 
 .caption-title {
@@ -111,12 +120,19 @@
   opacity: 0;
   cursor: pointer;
   color: var(--black);
+  transition: all ease 300ms;
+}
+
+.contact-icon:hover {
+  color: var(--red);
+  transform: translateY(-10px);
 }
 
 .section-caption,
 .h1-container {
   min-width: 50%;
   width: 50%;
+  min-height: 400px;
 }
 
 .p-title {
@@ -172,11 +188,42 @@
   margin-top: 1.5rem;
 }
 
+.mail-btn-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mail-btn {
+  padding: 1rem 2rem;
+  border: 1px solid var(--red);
+  border-radius: 4px;
+  color: var(--black);
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
+  transition: all ease 300ms;
+}
+
+.mail-btn:hover {
+  background-color: rgba(229, 9, 19, 0.7);
+  color: #eee;
+}
+
 @media only screen and (max-width: 900px) {
   .h1-container,
   .section-caption {
     min-width: 70%;
     width: 70%;
+  }
+
+  .hi-text {
+    font-size: 1rem !important;
+  }
+
+  .job-title,
+  .job-title-container {
+    font-size: 1.5rem !important;
   }
 
   .contact {

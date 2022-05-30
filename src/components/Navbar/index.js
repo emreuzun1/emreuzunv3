@@ -54,6 +54,16 @@ const Navbar = () => {
       >
         <span className="section-button">Experience</span>
       </div>
+      <div
+        className="section-item"
+        onClick={() =>
+          document
+            .getElementById("my-contact")
+            .scrollIntoView({ behavior: "smooth" })
+        }
+      >
+        <span className="section-button">Contact</span>
+      </div>
     </div>
   );
 };
