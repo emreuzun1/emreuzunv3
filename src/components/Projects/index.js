@@ -40,6 +40,34 @@ const Projects = () => {
               <div className="li-text tag anim">{"<li>"}</div>
               <div className="e-caption">
                 <div className="e-description">
+                  <p className="e-title anim">Notebase</p>
+                  <div className="project-text anim">
+                    This is my final project for school. It's an application for
+                    students to share their notes. Also, they can see other
+                    student's notes. Also, we supported this application with an
+                    AI that can detect if the notes are hand-written or not.
+                  </div>
+                  <ul className="project-technologies">
+                    <div className="e-list-item anim">React Native</div>
+                    <div className="e-list-item anim">Typescript</div>
+                    <div className="e-list-item anim">Styled Components</div>
+                    <div className="e-list-item anim">Redux Saga</div>
+                  </ul>
+                </div>
+                <div className="e-image-container anim">
+                  <img
+                    src={require("../../assets/images/notebase/notebase.png")}
+                    alt="1"
+                    className="e-image c-ratio image-1"
+                  />
+                </div>
+              </div>
+              <div className="li-text tag anim">{"</li>"}</div>
+            </div>
+            <div className="project-content ">
+              <div className="li-text tag anim">{"<li>"}</div>
+              <div className="e-caption">
+                <div className="e-description">
                   <p className="e-title anim">Jotform Tables</p>
                   <div className="project-text anim">
                     This is my intern project which is a mobile app for Jotform
