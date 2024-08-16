@@ -48,6 +48,64 @@ const Experiences = () => {
                 <div className="e-description">
                   <div className="">
                     <div className="e-title exp-anim">
+                      Adesso
+                      <div className="e-job-title exp-anim">
+                        Frontend Developer
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    className="e-text exp-anim"
+                    style={{ fontStyle: "italic", marginTop: "0.5rem" }}
+                  >
+                    10/2022 - Present
+                  </div>
+                  <div
+                    style={{ display: "flex", marginTop: "1rem" }}
+                    className="exp-anim"
+                  >
+                    <BsFillCaretRightFill size={18} color="#2f334c" />
+                    <div
+                      className="e-text"
+                      id="first-exp-text"
+                      style={{ maxWidth: "95%" }}
+                    >
+                      Chance to work with multiple teams like Pepsi and
+                      Mercedes.
+                    </div>
+                  </div>
+                  <div
+                    className="exp-anim"
+                    style={{ display: "flex", marginTop: "0.5rem" }}
+                  >
+                    <BsFillCaretRightFill size={18} color="#2f334c" />
+                    <div className="e-text" style={{ maxWidth: "95%" }}>
+                      Experienced multiple frameworks and areas of development.
+                      I have worked also in Backend development with Fastify and
+                      Mongoose.
+                    </div>
+                  </div>
+                </div>
+                <div className="e-image-container spike-image exp-anim">
+                  <img
+                    className="exp-image c-ratio"
+                    src={require("../../assets/images/adesso/adesso.png")}
+                    alt="CDS"
+                  />
+                </div>
+              </div>
+              <div className="li-text exp-anim tag">{"</li>"}</div>
+            </div>
+            <div className="exp-content exp-anim">
+              <div className="li-text exp-anim tag">{"<li>"}</div>
+              <div
+                className="e-caption"
+                style={{ marginTop: "1rem", marginBottom: "1rem" }}
+              >
+                <div className="e-description">
+                  <div className="">
+                    <div className="e-title exp-anim">
                       Cevher Digital Solutions
                       <div className="e-job-title exp-anim">
                         Software Engineer

@@ -42,8 +42,9 @@ const About = () => {
           <div className="about-text">
             I was born in İzmir in 1999. I've started to write code when I was
             14. At my 16, I built a trojan virus. I graduated from Yaşar
-            University in 2022. I've done my internship at Jotform. Since then,
-            I am working at Cevher Digital Solutions as a Software Engineer.
+            University in 2022. I've done my internship at Jotform. I've worked
+            1 year at Cevher Digital Solutions. Then, I joined Adesso through
+            "Young Adessi" program.
           </div>
           <div className="p-title second-p tag">{"</p>"}</div>
         </div>
